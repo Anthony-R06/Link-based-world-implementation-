@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "Title": "Campus Life on the West Side",
     "Credits": "Created by Adam Smith (amsmith@ucsc.edu).",
     "InitialLocation": "Kresge",
@@ -53,6 +54,169 @@
         },
         "Beyond": {
             "Body": "Grass, don't forget to check for ticks!"
+=======
+    "Title": "Escape the Holiday Inn",
+    "Credits": "Created by Anthony Rastellini (arastell@ucsc.edu).",
+    "InitialLocation": "LobbyS",
+    "Locations": {
+        "Key": {
+            "val": "false"
+        },
+        "LobbyS": {
+            "Body": "\"Ugh... what happened???\"\nYou wake up in what seems to be a hotel Lobby.\nDo you try to exit out the entance or Go up the Elavator?",
+            "Choices": [
+                {
+                    "Text": "Exit",
+                    "Target": "EndGame"
+                },
+                {
+                    "Text": "Elavator",
+                    "Target": "Elv"
+                }
+            ]
+        },
+        "Lby": {
+            "Body": "Do you try to exit out the entance or Go up the Elavator?",
+            "Choices": [
+                {
+                    "Text": "Elavator",
+                    "Target": "Elv"
+                },
+                {
+                    "Text": "Exit",
+                    "Target": "EndGame"
+                }
+            ]
+        },
+        "Elv": {
+            "Body": "There are 3 buttons for the 1st, 2nd, and 3rd floor.",
+            "Choices": [
+                {
+                    "Text": "Lobby",
+                    "Target": "Lby"
+                },
+                {
+                    "Text": "1st",
+                    "Target": "Floor1S"
+                },
+                {
+                    "Text": "2nd",
+                    "Target": "Floor2S"
+                },
+                {
+                    "Text": "3rd",
+                    "Target": "Floor3S"
+                }
+            ]
+        },
+        "Floor1S": {
+            "Body": "The elavator doors open and you step out and see a hallway of rooms with one room having the door wide open, Room #101",
+            "Choices": [
+                {
+                    "Text": "Elavator",
+                    "Target": "Elv"
+                },
+                {
+                    "Text": "Room #101",
+                    "Target": "R1"
+                }
+            ]
+        },
+        "Floor1": {
+            "Body": "",
+            "Choices": [
+                {
+                    "Text": "Elavator",
+                    "Target": "Elv"
+                },
+                {
+                    "Text": "Room #101",
+                    "Target": "R1"
+                }
+            ]
+        },
+        "R1": {
+            "Body": "This room has a open safe in it with a note on the front that says \"Room# = Passcode\".\n Nothing is in the safe.",
+            "Choices": [
+                {
+                    "Text": "Leave the Room",
+                    "Target": "Floor1"
+                }
+            ]
+        },
+        "Floor2S": {
+            "Body": "The elavator doors open and you step out and see a hallway of rooms with one room having the door wide open, Room #201",
+            "Choices": [
+                {
+                    "Text": "Elavator",
+                    "Target": "Elv"
+                },
+                {
+                    "Text": "Room #201",
+                    "Target": "R2"
+                }
+            ]
+        },
+        "Floor2": {
+            "Body": "",
+            "Choices": [
+                {
+                    "Text": "Elavator",
+                    "Target": "Elv"
+                },
+                {
+                    "Text": "Room #201",
+                    "Target": "R2"
+                }
+            ]
+        },
+        "R2": {
+            "Body": "",
+            "Choices": [
+                {
+                    "Text": "Leave the Room",
+                    "Target": "Floor2"
+                }
+            ]
+        },
+        "Floor3S": {
+            "Body": "The elavator doors open and you step out and see a hallway of rooms with one room having the door wide open, Room #103",
+            "Choices": [
+                {
+                    "Text": "Elavator",
+                    "Target": "Elv"
+                },
+                {
+                    "Text": "Room #301",
+                    "Target": "R3"
+                }
+            ]
+        },
+        "Floor3": {
+            "Body": "",
+            "Choices": [
+                {
+                    "Text": "Elavator",
+                    "Target": "Elv"
+                },
+                {
+                    "Text": "Room #301",
+                    "Target": "R3"
+                }
+            ]
+        },
+        "R3": {
+            "Body": "",
+            "Choices": [
+                {
+                    "Text": "Leave the Room",
+                    "Target": "Floor3"
+                }
+            ]
+        },
+        "EndGame": {
+            "Body": "You Escaped!! Thanks for playing!"
+>>>>>>> master
         }
     }
 }
